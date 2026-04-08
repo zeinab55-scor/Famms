@@ -1,0 +1,189 @@
+<section id="details">
+<header>
+    <h1>Product Details</h1>
+</header>
+<button
+class="back-to-top"
+[class.show]="backtotop"
+(click)="scrolltotop()"
+>
+ <i class="fa fa-arrow-up"></i>
+</button>
+  <div class="content">
+@if(services){
+    <div class="left">
+    <img src="{{services.img}}" alt="">
+</div>
+ <div class="right">
+    <h2>{{services.name}}</h2>
+    <span>
+        @for(n of numbers ;track $index){
+            <i class="fa-star"
+            [class.fa-solid]="$index < services.rate"
+            [class.fa-regular]="$index >= services.rate"
+            [style.color]="$index < services.rate ? 'gold' : 'lightgray'"
+            (click)="togalstar(services,$index)"
+            ></i>
+        }
+    </span>
+    <div class="price">
+        <h3 style="margin-left: 20px;">{{services.price |currency}}</h3>
+        <h3 style="color: gray;"><s>{{services.discount |currency}}</s></h3>
+        <h3 style="color: red;"> {{services.precentage}}%</h3>
+    </div>
+    <p>{{services.info}}</p>
+    <div class="description">
+      <div class="colordiscripe">
+             <h4>Select Color</h4>
+    <div class="colors" *ngIf="services">
+ <span
+  *ngFor="let c of services.colors || []"
+  class="color"
+  [style.background]="c">
+</span>
+</div>
+      </div>
+  <div class="sizediscripe">
+   <h5>Choose size</h5>
+<div class="size">
+  <div class="size-item" id="size1" (click)="chosesize1()" appsize style="margin-left: 20px;">S</div>
+  <div class="size-item" id="size2"  (click)="chosesize2()" appsize>M</div>
+  <div class="size-item" id="size3" (click)="chosesize3()" appsize>L</div>
+  <div class="size-item" id="size4" (click)="chosesize4()" appsize>XL</div>
+</div>
+<h6>Selected size:{{size}}</h6>
+</div>
+</div>
+   <div class="quntity">
+    <h6>Quntity</h6>
+    <button class="minus" (click)="decrease()">-</button>
+    <input
+  type="text"
+  [value]="count"
+   />
+    <button class="plus" (click)="increase()">+</button>
+      <button class="cart" (click)="addProduct(services)">Add TO Cart</button>
+</div>
+</div> 
+}
+</div>
+</section>
+<div class="links">
+    <nav>
+    <button>Product Details</button>
+    <button (click)="Showreviews()">Rating & Reviews</button>
+    <button (click)="Showfaq()" >FAQs</button>
+</nav>
+<hr>
+</div>
+@if(showreview){
+<section id="review">
+<header>
+    <div class="list">
+ <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    {{ selectedReview }}
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" (click)="selectedReview='All Review'; selectReview()">All Review</a></li>
+    <li><a class="dropdown-item" (click)="selectedReview='Last Week'; selectReview()">Last Week</a></li>
+    <li><a class="dropdown-item" (click)="selectedReview='Last Month'; selectReview()">Last Month</a></li>
+  </ul>
+</div>
+ </div>
+   @if(showinputs){
+<div class="write">
+    <button (click)="Writecomment()">Write a Review</button>
+</div>
+}
+</header>
+<div class="review">
+    @for(reviews of filteredReviews ;track reviews.id){
+       <div class="card" style="width: 24rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{reviews.name}}<i class="fa-solid fa-circle-check" style="color: green;"></i>
+ </h5>
+     <div class="icons">
+        <i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-regular fa-star"></i>
+ </div>
+    <p class="card-text">{{reviews.review}} </p>
+    <h6>{{reviews.date}}</h6>
+  </div>
+</div>
+    }
+ </div>
+    @if( showcomment){
+       <div class="my-comment">
+        <div class="card-body">
+    <h5 class="card-title"> 
+       {{name}} 
+        <i class="fa-solid fa-circle-check" style="color: green;"></i>
+ </h5>
+     <div class="icons">
+        <i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-regular fa-star"></i>
+ </div>
+    <p class="card-text">{{comment}}  </p>
+    <h6>{{today | date}} </h6>
+  </div>
+</div>  
+    }
+    @if(!showinputs){
+       <div class="writereview" id="comment">
+        <h5>Write Your Review</h5>
+        <input  type="text" name="name" placeholder="Your Name" required [(ngModel)]="name">
+        <textarea   name="review" id="review" placeholder="Your Review" required cols="113" rows="3" [(ngModel)]="comment"></textarea>
+        <div class="icon">
+            <span >
+   @for(n of numbers ;track $index){
+            <i class="fa-star"
+            [class.fa-solid]="$index < rates"
+            [class.fa-regular]="$index >= rates"
+            [style.color]="$index < rates? 'gold' : 'lightgray'"
+            (click)="rating($index)"
+            ></i>
+        }
+            </span>
+         </div>
+           <button class="send" (click)="sendcomment()">Send</button>
+            <button class="del" (click)="delet()">delete</button>
+    </div>  
+    }
+     </section>
+}
+@if(showfaq){
+   <section id="faq">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+ @for (fa of faq; track fa.id) {
+<div class="accordion-item">
+<h2 class="accordion-header">
+      <button 
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        [attr.data-bs-target]="'#collapse' + fa.id"
+        aria-expanded="false"
+        [attr.aria-controls]="'collapse' + fa.id">
+{{ fa.question }}
+</button>
+    </h2>
+<div 
+      id="collapse{{fa.id}}" 
+      class="accordion-collapse collapse"
+      data-bs-parent="#accordionFlushExample">
+<div class="accordion-body">
+        {{ fa.answar }}
+      </div>
+ </div>
+</div>
+ }
+</div>
+</section>  
+ }

@@ -1,0 +1,843 @@
+#home{
+    background-image: url(/slider-bg.jpg) ;
+    padding: 1px;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#home h1{
+    margin-top: 155px;
+    margin-left: 200px;
+    color: #f7444e;
+    font-weight: bold;
+    font-size: 4.5rem;
+    width: 32%;
+    line-height: 70px;
+    margin-bottom: 40px;
+}
+#home h1 span{
+    color: #002c3e;
+}
+#home p{
+    margin-left: 200px;
+    letter-spacing: 1px;
+    width: 33%;
+
+}
+#home button,#new-arrivals button{
+    width: 130px;
+    height: 40px;
+    border: none;
+    background-color: #f7444e;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    transition: 0.5s ease;
+}
+#home button:hover,#new-arrivals button:hover{
+    letter-spacing: 1px;
+    height: 42px;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+    border: none;
+    background-color: #f7444e;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: none;
+}
+.back-to-top.show{
+    display: flex;
+}
+#service h2{
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 35%;
+   font-size: 45px;
+font-family: 'Playfair Display', serif;
+}
+#service hr , #products hr{
+    height: 4px;
+    width: 100px;
+    border: none;
+    background-color: #f7444e;
+    opacity: 1;
+    margin-left: 45%;
+    margin-top: -1px;
+}
+#service .our-services{
+    display: flex;
+    margin-left: 140px;
+}
+#service .fast-delivery,.free-shiping,.best-quality{
+    background-color: #002c3e;
+    color: #fff;
+margin: 30px;
+width: 350px;
+border-radius: 10px;
+}
+#service .fast-delivery i,.free-shiping i,.best-quality i{
+margin-top: 50px;
+font-size: 40px;
+margin-left: 145px;
+}
+#service .fast-delivery p,.free-shiping p,.best-quality p{
+width:73%;
+margin-left: 60px;
+margin-bottom: 50px;
+}
+#service .fast-delivery h3,.free-shiping h3,.best-quality h3{
+margin-left: 90px;
+margin-top: 20px;
+
+}
+#new-arrivals{
+    background-image: url(/arrival-bg.png);
+    background-size: cover; /* الصورة تغطي العنصر بالكامل */
+   object-fit: cover;
+    padding: 1px;
+    margin-top: 50px;
+         
+}
+#new-arrivals h4{
+    color: #002c3e;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin-left: 55%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    font-size: 55px;
+}
+#new-arrivals p{
+    margin-left: 55%;
+    width: 25%;
+}
+#new-arrivals button{
+    margin-left: 55%;
+    margin-bottom: 150px;
+}
+#products{
+    margin-top: 80px;
+}
+#products > h5{
+    font-weight: bold;
+    margin-left: 40%;
+    font-size: 40px;
+     
+}
+#products > h5 span{
+    color: #f7444e;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 190px;
+
+}
+.cart button ,.detail button{
+   background-color: #f7444e;
+     color: #fff;
+     border: none;
+     border-radius: 15px;
+     height: 35px;
+     width: 120px;
+margin-bottom: 10px;
+transition: 0.5s ease;
+ position: absolute;
+ top:30%;
+margin-left: 100px;
+ }
+.detail button{
+      top:42%;
+    background-color: #002c3e;
+}
+.detail button:hover{
+    background-color: #0a4154;
+}
+.cart button:hover{
+    background-color: #db0f1a;
+}
+ 
+.text-overly{
+ position: absolute;
+  top:9%;
+  left:0;
+  width:100%;
+  height:91%;
+opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  transition: 0.5s ease;
+background-color: rgba(153, 153, 153, 0.6);
+}
+
+
+.card:hover .text-overly{
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.info{
+    display: flex;
+}
+.card{
+    position: relative;
+    height: 360px;
+    margin: 20px;
+background-color:#f8f9fa;
+border: none;
+border-right: 8px solid #fff;
+border-bottom: 8px solid #fff;
+box-shadow: 2px 2px  rgb(244, 241, 241);
+overflow: hidden;
+}
+.card img{
+    width: 200px;
+    height: 250px;
+    margin-left: 74px;
+    
+}
+.card h5{
+    margin-top: 10px;
+}
+.card h6{
+    margin-top: 12px;
+    margin-left:90px;
+    font-size: 19px;
+    color: #002c3e;
+}
+#products hr{
+    margin-left: 44%;
+  margin-bottom: 30px;
+}
+.showw{
+    border: none;
+    height: 50px;
+    width: 160px;
+    background-color: #f7444e;
+    color: #fff;
+     margin-left: 35%;
+     margin-top: 10px;
+     margin-bottom: 50px;
+     border-radius: 10px;
+}
+ .fa-heart {
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #999;
+  margin-left: 290px;
+  margin-top: 10px;
+}
+
+.liked {
+  color: #f7444e !important;
+  transform: scale(1.2);
+}
+footer img{
+    width: 260px;
+}
+.foot{
+    display: flex;
+    
+}
+.foot p{
+    color: #fff;
+    margin-left: 40%;
+}
+ 
+.foot a{
+    color:#f7444e ;
+   
+}
+footer a{
+     text-decoration: none;
+}
+@media (max-width:1200px){
+       #home h1{
+    font-size: 54px;
+    margin-left: 60px;
+    margin-top: 200px;
+    margin-bottom: 10px;
+    line-height: 1;
+    width: 34%;
+ }
+ #home p{
+    margin-left: 60px;
+    width: 40%;
+    letter-spacing: 0px;
+    font-size: 19px;
+    margin-top: 30px;
+   }
+   #home button{
+    margin-left: 60px;
+    margin-top: 16px;
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+   }
+   #home button:hover ,#new-arrivals button:hover{
+    height: 30px;
+   }
+   #service h2{
+    font-size: 37px;
+    margin-left: 36%;
+    margin-top: -60px;
+   }
+   #service .our-services{
+    margin-left: 115px;
+   }
+ #service .fast-delivery , .free-shiping, .best-quality {
+    width: 300px !important;
+    height: 210px;
+   margin: 3px;
+ }
+  #service .fast-delivery i, .free-shiping i, .best-quality i{
+    font-size: 49px;
+    margin-left: 120px;
+margin-top: 30px;
+  }
+   #service .fast-delivery h3, .free-shiping h3, .best-quality h3{
+font-size: 25px;
+margin-left: 70px;
+   }
+    #service  .fast-delivery p, .free-shiping p, .best-quality p{
+font-size: 17px;
+margin-left:58px ;
+opacity: 0.8;
+margin-top: -5px;
+    }
+    #new-arrivals{
+       
+        background-repeat: no-repeat;
+        background-size:100%;
+        
+    }
+    #new-arrivals h4{
+font-size: 39px;
+margin-left: 560px;
+margin-top: 120px;
+    }
+    #new-arrivals p{
+        margin-left: 560px;
+        width: 39.5%;
+    }
+    #new-arrivals button{
+        width: 125px;
+        height: 35px;
+        margin-left: 565px;
+        margin-top: 16px;
+        font-size: 15px;
+    }
+    #products{
+        margin-top: 50px;
+       
+}
+#products h5{
+    font-size: 39px;
+    margin-left: 36%;
+     
+}
+#products hr{
+    margin-left: 40%;
+}
+.card{
+    width: 18rem !important;
+    margin-left: 6px;
+    margin: 10px;
+    height: 310px;
+    margin-bottom: 20px;
+}
+.cards{
+    margin-left: 120px;
+}
+.card img{
+    width: 140px;
+    height: 180px;
+    margin-left: 69px;
+}
+.card h5{
+    font-size: 20px !important;
+    margin-left: 0px !important;
+    margin-top: 40px !important;
+    
+}
+.card h6{
+    font-size: 17px;
+    margin-left: 43px;
+    margin-top: 40px;
+}
+.card .cart button ,.detail button{
+    margin-left: 88px;
+ height: 30px;
+     width: 100px;
+margin-bottom: 10px;
+ font-size: 13px;
+ }
+ .card .detail button{
+    top:44%;
+ }
+ .showw{
+    height: 43px;
+    width: 155px;
+    font-size: 15px;
+    margin-left: 37%;
+ }
+  
+ .foot{
+    margin-left: -130px;
+ }
+  .fa-heart{
+    margin-left: 10px;
+    margin-top: 2px;
+ }
+.back-to-top{
+    z-index: 2;
+}
+footer img{
+    width: 140px;
+}
+}
+@media(max-width:992px){
+     #home h1{
+    font-size: 34px;
+    margin-left: 40px;
+    margin-top: 145px;
+    margin-bottom: 10px;
+    line-height: 1;
+    width: 27%;
+ }
+ #home p{
+    margin-left: 40px;
+    width: 40%;
+    letter-spacing: 0px;
+    font-size: 14px;
+   }
+   #home button{
+    margin-left: 40px;
+    margin-top: 16px;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+   }
+   #home button:hover ,#new-arrivals button:hover{
+    height: 30px;
+   }
+   #service h2{
+    font-size: 37px;
+    margin-left: 32%;
+    margin-top: -160px;
+   }
+   #service .our-services{
+    margin-left: 25px;
+   }
+ #service .fast-delivery , .free-shiping, .best-quality {
+    width: 300px !important;
+    height: 210px;
+   margin: 3px;
+ }
+  #service .fast-delivery i, .free-shiping i, .best-quality i{
+    font-size: 49px;
+    margin-left: 120px;
+margin-top: 30px;
+  }
+   #service .fast-delivery h3, .free-shiping h3, .best-quality h3{
+font-size: 25px;
+margin-left: 70px;
+   }
+    #service  .fast-delivery p, .free-shiping p, .best-quality p{
+font-size: 17px;
+margin-left:58px ;
+opacity: 0.8;
+margin-top: -5px;
+    }
+    #new-arrivals{
+       
+        background-repeat: no-repeat;
+        background-size:100%;
+        
+    }
+    #new-arrivals h4{
+font-size: 29px;
+margin-left: 460px;
+margin-top: 120px;
+    }
+    #new-arrivals p{
+        margin-left: 460px;
+        width: 39.5%;
+    }
+    #new-arrivals button{
+        width: 125px;
+        height: 35px;
+        margin-left: 465px;
+        margin-top: 1px;
+        font-size: 15px;
+    }
+    #products{
+        margin-top: 50px;
+       
+}
+#products h5{
+    font-size: 39px;
+    margin-left: 36%;
+     
+}
+#products hr{
+    margin-left: 40%;
+}
+.card{
+    width: 18rem !important;
+    margin-left: 6px;
+    margin: 10px;
+    height: 310px;
+    margin-bottom: 20px;
+}
+.cards{
+    margin-left: 25px;
+}
+.card img{
+    width: 140px;
+    height: 180px;
+    margin-left: 69px;
+}
+.card h5{
+    font-size: 20px !important;
+    margin-left: 0px !important;
+    margin-top: 40px !important;
+    
+}
+.card h6{
+    font-size: 17px;
+    margin-left: 43px;
+    margin-top: 40px;
+}
+.card .cart button ,.detail button{
+    margin-left: 88px;
+ height: 30px;
+     width: 100px;
+margin-bottom: 10px;
+ font-size: 13px;
+ }
+ .card .detail button{
+    top:44%;
+ }
+ .showw{
+    height: 43px;
+    width: 155px;
+    font-size: 15px;
+    margin-left: 37%;
+ }
+  
+ .foot{
+    margin-left: -130px;
+ }
+  .fa-heart{
+    margin-left: 10px;
+    margin-top: 2px;
+ }
+.back-to-top{
+    z-index: 2;
+}
+footer img{
+    width: 140px;
+}
+}
+
+
+@media (max-width:768px){
+   #home h1{
+    font-size: 29px;
+    line-height: 1;
+    margin-top: 90px;
+    margin-left: 40px;
+    width: 200px;
+   }
+    #home p{
+    margin-left: 40px;
+    width: 41%;
+    letter-spacing: 0px;
+    font-size: 14px;
+   }
+   #home button{
+    margin-left: 40px;
+    margin-top: 15px;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+   }
+   #home button:hover ,#new-arrivals button:hover{
+    height: 30px;
+   }
+   #service h2{
+    font-size: 27px;
+    margin-left: 33%;
+    margin-top: -300px;
+   }
+   #service .our-services{
+    margin-left: 70px;
+   }
+ #service .fast-delivery , .free-shiping, .best-quality {
+    width: 200px !important;
+    height: 150px;
+   margin: 3px;
+ }
+  #service .fast-delivery i, .free-shiping i, .best-quality i{
+    font-size: 40px;
+    margin-left: 80px;
+margin-top: 30px;
+  }
+   #service .fast-delivery h3, .free-shiping h3, .best-quality h3{
+font-size: 15px;
+margin-left: 62px;
+   }
+    #service  .fast-delivery p, .free-shiping p, .best-quality p{
+font-size: 11px;
+margin-left:38px ;
+opacity: 0.8;
+margin-top: -5px;
+    }
+    #new-arrivals{
+       
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+    }
+    #new-arrivals h4{
+font-size: 25px;
+margin-left: 350px;
+margin-top: 90px;
+    }
+    #new-arrivals p{
+        margin-left: 350px;
+        width: 39.5%;
+    }
+    #new-arrivals button{
+        width: 100px;
+        height: 30px;
+        margin-left: 355px;
+        margin-top: 1px;
+        font-size: 15px;
+    }
+    #products{
+        margin-top: 1px;
+       
+}
+#products h5{
+    font-size: 29px;
+    margin-left: 36%;
+    
+}
+#products hr{
+    margin-left: 44%;
+}
+.card{
+    width: 14rem !important;
+    margin-left: 10px;
+    margin: 8px;
+    height: 270px;
+    margin-bottom: 20px;
+}
+.cards{
+    margin-left: 10px;
+}
+.card img{
+    width: 140px;
+    height: 140px;
+    margin-left: 40px;
+}
+.card h5{
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    margin-top: 40px !important;
+    
+}
+.card h6{
+    font-size: 14px;
+    margin-left: 33px;
+    margin-top: 40px;
+}
+.card .cart button ,.detail button{
+    margin-left: 57px;
+ height: 30px;
+     width: 100px;
+margin-bottom: 10px;
+ font-size: 13px;
+ }
+ .card .detail button{
+    top:44%;
+ }
+ .showw{
+    height: 38px;
+    width: 155px;
+    font-size: 15px;
+    margin-left: 38%;
+ }
+  
+ .foot{
+    margin-left: -130px;
+ }
+  .fa-heart{
+    margin-left: 10px;
+    margin-top: 2px;
+ }
+.back-to-top{
+    z-index: 2;
+}
+}
+ @media(max-width:600px){
+    #home{
+        background-size: contain;
+        width: 600px;
+        
+    }
+ #home h1{
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 55px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    width: 30%;
+ }
+  
+   #home p{
+    margin-left: 10px;
+    width: 51%;
+    letter-spacing: 0px;
+    font-size: 14px;
+   }
+   #home button{
+    margin-left: 10px;
+    margin-top: -6px;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+   }
+   #home button:hover ,#new-arrivals button:hover{
+    height: 30px;
+   }
+   #service h2{
+    font-size: 27px;
+    margin-left: 26%;
+    margin-top: -300px;
+   }
+   #service .our-services{
+    margin-left: 10px;
+   }
+ #service .fast-delivery , .free-shiping, .best-quality {
+    width: 150px !important;
+    height: 150px;
+   margin: 3px;
+ }
+  #service .fast-delivery i, .free-shiping i, .best-quality i{
+    font-size: 40px;
+    margin-left: 50px;
+margin-top: 30px;
+  }
+   #service .fast-delivery h3, .free-shiping h3, .best-quality h3{
+font-size: 15px;
+margin-left: 32px;
+   }
+    #service  .fast-delivery p, .free-shiping p, .best-quality p{
+font-size: 11px;
+margin-left:28px ;
+opacity: 0.8;
+margin-top: -5px;
+    }
+    #new-arrivals{
+       
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 600px;
+    }
+    #new-arrivals h4{
+font-size: 25px;
+margin-left: 260px;
+margin-top: 40px;
+    }
+    #new-arrivals p{
+        margin-left: 260px;
+        width: 39.5%;
+    }
+    #new-arrivals button{
+        width: 100px;
+        height: 30px;
+        margin-left: 265px;
+        margin-top: 1px;
+        font-size: 15px;
+    }
+    #products{
+        margin-top: 1px;
+       
+}
+#products h5{
+    font-size: 29px;
+    margin-left: 32%;
+    margin-top: -50px;
+}
+#products hr{
+    margin-left: 39%;
+}
+.card{
+    width: 14rem !important;
+    margin-left: 6px;
+    margin: 4px;
+    height: 270px;
+    margin-bottom: 20px;
+}
+.cards{
+    margin-left: 10px;
+}
+.card img{
+    width: 140px;
+    height: 140px;
+    margin-left: 40px;
+}
+.card h5{
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    margin-top: 40px !important;
+    
+}
+.card h6{
+    font-size: 14px;
+    margin-left: 33px;
+    margin-top: 40px;
+}
+.card .cart button ,.detail button{
+    margin-left: 57px;
+ height: 30px;
+     width: 100px;
+margin-bottom: 10px;
+ font-size: 13px;
+ }
+ .card .detail button{
+    top:44%;
+ }
+ .showw{
+    height: 33px;
+    width: 145px;
+    font-size: 15px;
+    margin-left: 30%;
+ }
+  
+ .foot{
+    margin-left: -130px;
+ }
+  .fa-heart{
+    margin-left: 10px;
+    margin-top: 2px;
+ }
+.back-to-top{
+    z-index: 2;
+}
+ }

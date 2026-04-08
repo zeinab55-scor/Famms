@@ -1,0 +1,59 @@
+ <section id="contact">
+     <div class="contac">
+        <h1>CONTACT US</h1>
+     </div>
+     <button
+class="back-to-top"
+[class.show]="backtotop"
+(click)="scrolltotop()"
+>
+ <i class="fa fa-arrow-up"></i>
+
+</button>
+     <div class="form">
+        <h2>Get in touch</h2> <hr>
+        <p>We are here for you! how can we help, We are here for you!</p>
+        <div class="contain">
+            <div class="left">
+            <h3>Let`s Connect</h3>
+            <h4>Send Your Message</h4>
+            <p>The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.</p>
+            <form>
+                <input type="text" placeholder="Your Name" name="name" required [(ngModel)]="username">
+                <input type="email" placeholder="Your Email" name="email" required [(ngModel)]="useremail">
+                <input type="number" max="11" min="11" name="phone" placeholder="Your Phone" required [(ngModel)]="phone">
+                <input type="text" placeholder="Enter Subject" name="subject" required [(ngModel)]="subject">
+                <div class="text">
+                     <textarea name="message" placeholder="Enter Your Message" required  id="message" cols="92" rows="4" [(ngModel)]="message" ></textarea>
+                </div>
+               <button (click)="login()" >Send Message</button>
+            </form>
+            <div class="info">
+            <div class="address">
+                <a><i class="fa-solid fa-location-dot"></i></a>
+                <h5>Address</h5>
+                <h6>123 Street New Yourk.USA</h6>
+            </div>
+          <div class="mail">
+             <a><i class="fa-solid fa-envelope"></i></a>
+                <h5 style=" margin-left: 62px;">Mail Us</h5>
+                <h6 style=" margin-left: 20px;">Famms@example.com</h6>
+          </div>
+<div class="telp"  >
+     <a><i class="fa-solid fa-phone"></i></a>
+                <h5>Telephone</h5>
+                <h6 style=" margin-left: 36px;">+0201234567890</h6>
+</div>
+
+
+        </div>
+        </div>
+        <div class="right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12537540.153462525!2d-119.6494257736773!3d43.4561428359612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2seg!4v1767551630023!5m2!1sen!2seg" width="480" height="710"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+     </div>
+  
+
+
+        </div>
+       
+ </section>

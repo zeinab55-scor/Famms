@@ -1,0 +1,343 @@
+ #contact h1{
+    font-weight: bold;
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 41%;
+
+}
+ #contact .contac {
+    background-color: #f7444e;
+    height: 140px;
+    padding: 1px;
+}
+h2{
+    margin-top: 30px;
+    margin-left: 42.3%;
+    color: #f7444e;
+}
+hr{
+    border: none;
+    background-color: #f7444e;
+    width: 180px;
+    height: 3px;
+    opacity: 1;
+    margin-left: 42.3%;
+    margin-top: -4px;
+}
+.form{
+    background-color:#F5F5F5;
+   margin: 70px 110px;
+   border-radius: 8px;
+   padding: 1px;
+   margin-bottom: -400px;
+}
+.form > p{
+    margin-left: 34%;
+opacity: 0.8;
+ 
+}
+h3{
+    font-size: 20px;
+    color: #f7444e;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+h4{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: #484848;;
+}
+.left p{
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 85%;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+.contain ,.info{
+    display: flex;
+}
+iframe{
+    margin-right: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+form{
+    margin-left: 20px;
+}
+input{
+    width: 340px;
+    height: 60px;
+    border: 1px solid rgb(160, 158, 158);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+textarea{
+    margin-left: 20px;
+      border: 1px solid rgb(160, 158, 158); 
+      border-radius: 10px;
+}
+button{
+    border: none;
+    width:700px ;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #f7444e;
+    height: 60px;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+ button:hover{
+    
+    background-color: #b1252c;
+ }
+.info{
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.address a i,.mail a i ,.telp a i{
+    background-color:#f7444e;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    font-size: 25px;
+    padding-top: 22px;
+    color: #fff;
+    margin-left: 60px;
+    cursor: pointer;
+     transition: 0.5s ease;
+}
+.address a i:hover,.mail a i:hover ,.telp a i:hover{
+background-color: #b1252c;
+}
+.address h5 ,.mail h5 ,.telp h5{
+    margin-top: 15px;
+    margin-left: 55px;
+     
+}
+.address h6 ,.mail h6 ,.telp h6{
+    opacity: 0.8;
+}
+.mail,.telp{
+    margin-left: 20px;
+}
+.back-to-top{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    background-color: #f7444e;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+    display: none;
+     
+}
+.back-to-top.show{
+    display: flex;
+}
+@media(max-width:1200px){
+    #contact h1{
+        margin-left: 37%;
+    }
+    h2{
+        margin-left: 40%;
+    }
+    hr{
+        margin-left: 40%;
+    }
+    .form{
+    margin: 30px 30px;
+        margin-bottom: -400px;
+  }
+  .form > p{
+    margin-left: 29%;
+ }
+ .left p{
+    
+    width: 72%;
+   }
+   input{
+    width: 280px;
+   }
+   textarea{
+    margin-left: 15px;
+     width: 589px;
+}
+button{
+    width: 585px;
+}
+.mail {
+    margin-left: -10px;
+}
+.telp{
+    margin-left: -10px;
+}
+.address{
+    margin-left: -49px;
+}
+iframe{
+     margin-left: 10px;
+     height: 745px;
+}
+}@media (max-width:992px){
+.form{
+    margin: 20px 10px;
+}
+h3 ,h4 ,.left p  {
+    margin-left: 20px;
+}
+form{
+    margin-left: 1px;
+}
+input{
+    width: 250px;
+}
+textarea{
+
+    width: 523px;
+}
+ button{
+    width: 520px;
+ }
+ iframe{
+    width: 400px;
+ }
+}
+@media (max-width:768px){
+.form{
+    margin: 20px 10px;
+      margin-bottom: -400px;
+  }
+ 
+.left p{
+    width: 92%;
+   }
+.contain{
+    display: block;
+}
+iframe{
+  width: 710px;
+  margin-left: 10px;
+  height: 300px;
+  margin-bottom: 20px;
+   }
+ 
+input{
+    width: 340px;
+    }
+textarea{
+     width: 704px;
+}
+button{
+     width:700px ;
+      }
+ .info{
+    margin-left: 80px;
+   }
+ 
+.mail {
+    margin-left: 30px;
+}
+.telp{
+    margin-left: 10px;
+}
+.address{
+    margin-left: -15px;
+}
+}
+@media(max-width:600px){
+    #contact h1{
+        margin-left: 33%;
+    }
+      h2{
+        margin-top: 20px;
+        margin-left: 33%;
+    }
+    hr{
+   margin-left: 30%;
+    }
+.form{
+    margin: 20px 10px;
+      margin-bottom: -400px;
+  }
+.form > p{
+    margin-left: 5%;
+ }
+h3{
+     margin-top: 10px;
+    margin-left: 20.3px;
+    }
+h4{
+    margin-left: 20px;
+   }
+.left p{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 92%;
+   }
+.contain{
+    display: block;
+}
+iframe{
+  width: 444px;
+  margin-left: 10px;
+  height: 300px;
+  margin-bottom: 20px;
+   }
+form{
+    margin-left: 1px;
+   }
+input{
+    width: 210px;
+    height: 40px;
+  margin-left: 15px;
+    }
+textarea{
+    margin-left: 15px;
+     width: 433px;
+}
+button{
+     width:430px ;
+     height: 45px;
+ }
+ .info{
+    margin-left: 0px;
+   }
+.address a i,.mail a i ,.telp a i{
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    padding-top: 17px;
+ }
+ .address h5 ,.mail h5 ,.telp h5{
+    margin-top: 15px;
+    margin-left: 46px;
+     
+}
+.address h6 ,.mail h6 ,.telp h6{
+    margin-left: 35px;
+    font-size: 15px;
+    width: 80%;
+}
+.mail {
+    margin-left: 20px;
+}
+.telp{
+    margin-left: -10px;
+}
+.address{
+    margin-left: -15px;
+}
+}

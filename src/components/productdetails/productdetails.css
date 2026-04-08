@@ -1,0 +1,552 @@
+#details h1{
+    font-weight: bold;
+    margin-left: 39%;
+    margin-top: 30px;
+    color: #fff;
+}
+ #details header{
+    padding: 1px;
+background-color:#f7444e ;
+height: 110px;
+ } 
+ .content,.price,.colors,.size{
+    display: flex;
+ }
+ .content img{
+   margin: 50px;
+   margin-left: 65px;
+   width: 320px;
+   height: 400px;
+ }
+ .left{
+     height: 500px;
+    margin: 20px;
+    width: 450px;
+background-color:#dcdddf;
+border: none;
+border-right: 8px solid #fff;
+border-bottom: 8px solid #fff;
+box-shadow: 2px 2px  rgb(244, 241, 241);
+overflow: hidden;
+margin-left: 210px;
+margin-top: 100px;
+ }
+ .content h2{
+    margin-top: 100px;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+ .price h3{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+ }
+ .content p{
+    margin-top: 10px;
+    margin-left: 20px;
+    opacity: 0.9;
+ }
+ .content h4{
+    margin-left: 20px;
+    margin-top: 30px;
+ }
+.colors {
+  display: flex;
+  gap: 8px;
+  margin-left: 20px;
+}
+.color {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  }
+ .right{
+    margin-left: 50px;
+ }
+ .content h5{
+    margin-left: 18px;
+    margin-top: 30px;
+    font-size: 25px;
+ }
+.size {
+  display: flex;
+  gap: 10px;
+}
+.size-item {
+  padding: 8px 14px;
+  border: 1px solid #000;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.size-item.active {
+  background-color: black;
+  color: white;
+}
+.content  h6{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+ }
+ .back-to-top{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    background-color: #f7444e;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+    display: none;
+     }
+.back-to-top.show{
+    display: flex;
+}
+.quntity h6{
+   font-weight: bold;
+   font-size: 20px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+}
+.quntity .minus ,.plus{
+   margin-left: 7px;
+   border: 2px solid #a29f9f;
+  width: 30px;
+  border-radius: 2px;
+  margin-right: 7px;
+  transition: 0.5s ease;
+}
+.quntity{
+   margin-left: 10px;
+}
+.quntity input{
+   width: 50px;
+   border:2px solid #a29f9f ;
+  text-align: center;
+}
+.quntity .minus:hover ,.plus:hover{
+background-color: #000;
+color: #fff;
+border: 2px solid #000;
+}
+.quntity .cart ,header button{
+   border: none;
+   height: 40px;
+   width: 130px;
+   background-color: #f7444e;
+   color: #fff;
+   border-radius: 10px;
+   transition: 0.5s ease;
+}
+.quntity .cart:hover,header button:hover,.writereview button:hover{
+   background-color: #c5121b;
+}
+nav button{
+   margin-left: 80px;
+  border: none;
+  background-color: transparent;
+   font-weight: bold;
+   opacity: 0.9;cursor: pointer;
+   transition: 0.5s ease;
+font-size: 19px;
+}
+nav button:hover{
+   opacity: 1;
+   color: #000;
+   border-bottom: 2px solid #000;
+}
+nav{
+   margin-left: 400px;
+   margin-top: 50px;
+    }
+ .links{
+margin-bottom: -370px;
+ }
+hr{
+   border: none;
+   opacity: 1px;
+   background-color: rgb(7, 7, 7);
+   height: 1px;
+   width: 900px;
+   margin-left: 300px;
+ }
+span{
+   margin-left: 20px;
+}
+span i{
+   margin-left: 3px;
+   font-size: 20px;
+   cursor: pointer;
+}
+#review header{
+   display: flex;
+   margin-left: 60%;
+     margin-top: 415px !important;
+}
+ header button{
+   margin-left: 10px;
+   
+ }
+.dropdown button{
+   height: 40px;
+   border-radius: 5px;
+   width: 130px;
+   background-color: transparent;
+   border: 2px solid #000;
+   color: #000;
+ }
+ .dropdown button:hover{
+   background-color: transparent;
+ }
+ .dropdown li a{
+   cursor: pointer;
+ }
+ .dropdown-item:hover{
+   background-color: #f7444e;
+   color: #fff;
+ }
+ .review{
+   display: flex;
+   flex-wrap: wrap;
+ margin-left: 220px;
+ width: 970px;
+ margin-top: 30px;
+ margin-bottom: -300px;
+ }
+ .card{
+   margin-left: 100px;
+   margin-top: 20px;
+ }
+ .review .icons i ,.my-comment i {
+   color: gold;
+ }
+ .review h6 ,.my-comment h6{
+   opacity: 0.8;
+ }
+ .writereview{
+ border: none;
+border-right: 8px solid #fff;
+border-bottom: 8px solid #fff;
+box-shadow: 2px 2px 2px 2px rgb(215, 212, 212);
+   width: 900px;
+   padding: 1px;
+   margin-left: 320px;
+   margin-top: 320px;
+   border-radius: 10px;
+   height: 320px;
+  margin-bottom: -360px;
+   }
+ .writereview h5{
+   font-weight: bold;
+  margin: 20px;
+ }
+ .writereview input{
+   margin-left: 20px;
+   height: 50px;
+   width: 850px;
+   border: 2px solid rgb(217, 211, 211);
+   border-radius: 10px;
+ }
+ .writereview textarea{
+   border: 2px solid rgb(217, 211, 211);
+   margin: 20px;
+   margin-top: 5px;
+   border-radius: 10px;
+ }
+ .writereview button,.writereview .del:hover{
+     border: none;
+   height: 40px;
+   width: 355px;
+   background-color: #f7444e;
+   color: #fff;
+   border-radius: 10px;
+   transition: 0.5s ease;
+   margin-left:40px;
+   margin-top: 20px;
+   font-size: 20px;
+ }
+ .writereview .send{
+  margin-left: 70px;
+ }
+ .writereview i{
+   color: #000;
+ }
+ .my-comment{
+   border: 1px solid rgb(218, 216, 216);
+   width: 24rem;
+   border-radius: 5px;
+   height: 190px;
+   margin-top: 320px;
+   margin-left: 320px;
+    margin-bottom: -300px;
+ }
+ .my-comment h5{
+  margin: 15px;
+  margin-bottom: 10px;
+  font-size: 22px;
+ }
+ .my-comment .icons,.my-comment p,.my-comment h6{
+   margin-left: 15px;
+    }
+  .writereview .del ,.writereview .send:hover{
+  background-color: transparent;
+  border: 2px solid #f7444e;
+  color: #000;
+ }
+ #faq{
+  margin-top: 410px;
+  margin-bottom: -320px;
+  }
+ .accordion{
+   width: 860px;
+   border-bottom: 2px solid rgb(218, 209, 209);
+   margin-left: 310px;
+   background-color: #a29f9f !important;
+   }
+ .accordion-button {
+  background-color: #f0f0f0;  
+  color: #333;  
+  transition: all 0.3s ease;  
+  font-weight: bold;
+}
+ .accordion-button:hover {
+  color: #f7444e; 
+  border: none !important;
+  }
+.accordion-body{
+  background-color: #f0f0f0 !important;
+}
+@media (max-width:1200px){
+ .review{
+  margin-left: 70px;
+ }
+ .writereview{
+  margin-left: 120px;
+ }
+  nav{
+  margin-left: 250px;
+ }
+  hr{
+    width: 700px;
+    margin-left: 22%;
+  }
+  .accordion{
+    margin-left: 160px;
+  }
+}
+@media (max-width:992px){
+  .left{
+    margin-left: 40px;
+  }
+  nav {
+    margin-left: 120px;
+  }
+  hr{
+    margin-left: 160px;
+    width: 600px;
+  }
+  .review{
+    margin-left: 70px;
+  }
+  .review .card{
+    margin-left: 20px;
+  }
+  .writereview{
+    margin-left: 30px;
+  }
+  .accordion{
+    margin-left: 55px;
+  }
+}
+@media (max-width:768px){
+    #details h1{
+     margin-left: 35%;
+    }
+ .content img{
+   margin: 20px;
+   margin-left: 25px;
+   width: 250px;
+   height: 280px;
+   }
+ .left{
+     height: 350px;
+     width: 300px;
+ margin-left: 45px;
+margin-top: 50px;
+ }
+ .content h2{
+    margin-top: 50px;
+    }
+ .right{
+    margin-left: 22px;
+ }
+.description h4 ,.description h5{
+  font-size: 20px;
+ }
+  .description{
+    display: flex;
+    margin-top: -10px;
+  }
+  .sizediscripe{
+margin-left: 20px;
+  }
+  .quntity{
+    margin-top: -40PX;
+  }
+  .color{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  .size .size-item{
+    width: 30px;
+    height: 30px;
+   padding-top: 1px;
+   padding-left: 6px;
+  }
+nav button{
+   margin-left: 70px;
+  font-size: 19px;
+}
+ nav{
+   margin-left: 40px;
+ }
+ hr{
+  margin-left: 110px;
+   width: 520px;
+ }
+ #review header{
+    margin-left: 440px;
+     margin-top: 390px !important;
+}
+ .dropdown button{
+   height: 35px;
+width: 120px;
+  }
+  .write button{
+    height: 35px;
+  }
+  .review{
+   margin-left:20px;
+ width: 697px;
+  }
+ .card{
+   margin-left: 10px;
+   width: 21rem !important;
+ }
+  .back-to-top{
+    z-index: 2;
+  }
+ .writereview{
+ width: 690px;
+    margin-left: 25px;
+    height: 400px;
+   }
+ .writereview input{
+   margin-left: 20px;
+    width: 640px;
+   }
+ .writereview textarea{
+  width: 640px;
+ }
+ .writereview button ,.writereview .del:hover{
+    width: 600px;
+    margin-left: 40px;
+   }
+   .writereview .send{
+    margin-left: 40px;
+   }
+  .my-comment{
+   width: 21rem;
+  margin-left: 30px;
+ }
+  .accordion{
+   width: 665px;
+   margin-left: 40px;
+ }
+ }
+@media(max-width:600px){
+  #details h1{
+     margin-left: 28%;
+    }
+ .content {
+    display: block;
+ }
+ .content img{
+   margin: 20px;
+   margin-left: 35px;
+   }
+ .left{
+     height: 450px;
+     width: 400px;
+ margin-left: 45px;
+margin-top: 50px;
+ }
+ .content h2{
+    margin-top: 20px;
+    }
+ .right{
+    margin-left: 22px;
+ }
+nav button{
+   margin-left: 20px;
+  font-size: 17px;
+}
+ nav{
+   margin-left: 20px;
+ }
+ hr{
+  margin-left: 22px;
+   width: 420px;
+ }
+ #review header{
+    margin-left: 190px;
+     margin-top: 390px !important;
+}
+ .dropdown button{
+   height: 35px;
+width: 120px;
+  }
+  .write button{
+    height: 35px;
+  }
+  .review{
+   margin-left:10px;
+ width: 470px;
+  }
+ .card{
+   margin-left: 7px;
+   width: 14rem !important;
+ }
+  .back-to-top{
+    z-index: 2;
+  }
+ .writereview{
+ width: 450px;
+    margin-left: 20px;
+   }
+ .writereview input{
+   margin-left: 20px;
+   height: 40px;
+   width: 410px;
+   }
+ .writereview textarea{
+  width: 410px;
+ }
+ .writereview button,.writereview .del:hover{
+    width: 155px;
+   margin-left:20px;
+   }
+  .my-comment{
+   width: 14rem;
+  margin-left: 20px;
+ }
+  .accordion{
+   width: 465px;
+   margin-left: 10px;
+ }
+ }

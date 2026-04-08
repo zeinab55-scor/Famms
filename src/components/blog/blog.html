@@ -1,0 +1,29 @@
+ <button
+class="back-to-top"
+[class.show]="backtotop"
+(click)="scrolltotop()"
+>
+ <i class="fa fa-arrow-up"></i>
+
+</button>
+<section id="blog">
+    <header>
+    <h1>Blog</h1>
+</header>
+
+<div class="blog">
+    @for(blog of BlogItem;track blog.title){
+           <div class="card" style="width: 29rem;">
+<h2>{{blog.title}}</h2>
+  <img src="{{blog.img}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{blog.information}}</h5>
+     <a href="#" class="btn btn-primary">Read More</a>
+  </div>
+</div> 
+    }
+
+</div>
+</section>
+
+

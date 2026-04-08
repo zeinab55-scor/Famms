@@ -1,0 +1,393 @@
+#about h1{
+    font-weight: bold;
+    margin-left: 41.5%;
+    margin-top: 30px;
+    color: #fff;
+}
+ #about header{
+    padding: 1px;
+background-color:#f7444e ;
+height: 110px;
+ }
+ #about h2{
+    margin-left: 42.5%;
+    margin-top: 60px;
+ }
+#about p{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+#about hr,#our-story hr{
+    border: none;
+    width: 70px;
+    height: 3px;
+    background-color: #f7444e;
+    opacity: 1;
+    margin-left: 45%;
+    margin-top: -3px;
+}
+.carousel-indicators.custom-indicators {
+  position: static;
+  margin-top: 20px;
+   margin-right: 310px;
+}
+
+.carousel-indicators.custom-indicators button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #f7444e;
+  opacity: 1;
+  
+}
+
+.carousel-indicators.custom-indicators .active {
+  background-color: #f7444e;
+}
+#our-story h3{
+    font-weight: bold;
+    margin-left: 42%;
+    margin-top:100px ;
+    margin-bottom: 20px;
+}
+#our-story p{
+    width: 50%;
+    margin-left: 24%;
+}
+
+#our-story hr{
+    margin-top: -12px;
+    margin-left: 44%;
+}
+.back-to-top{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    background-color: #f7444e;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+    display: none;
+    z-index: 2;
+}
+.back-to-top.show{
+    display: flex;
+}
+
+#choose-us h2{
+    font-weight: bold;
+    margin-top: 100px;
+    margin-left: 35%;
+   font-size: 45px;
+font-family: 'Playfair Display', serif;
+}
+#choose-us hr , #products hr ,#images hr{
+    height: 4px;
+    width: 100px;
+    border: none;
+    background-color: #f7444e;
+    opacity: 1;
+    margin-left: 45%;
+    margin-top: -1px;
+}
+#choose-us .our-services{
+    display: flex;
+    margin-left: 140px;
+}
+#choose-us .fast-delivery,.free-shiping,.best-quality{
+    background-color: #002c3e;
+    color: #fff;
+margin: 30px;
+width: 350px;
+border-radius: 10px;
+}
+#choose-us .fast-delivery i,.free-shiping i,.best-quality i{
+margin-top: 50px;
+font-size: 40px;
+margin-left: 145px;
+}
+#choose-us .fast-delivery p,.free-shiping p,.best-quality p{
+width:73%;
+margin-left: 60px;
+margin-bottom: 50px;
+}
+#choose-us .fast-delivery h3,.free-shiping h3,.best-quality h3{
+margin-left: 90px;
+margin-top: 20px;
+
+}
+#images{
+ background-color: #002c3e;
+ height: 710px;
+ padding: 1px;
+ margin-top: 100px;
+ }
+.image{
+    display: flex;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    }
+#images img{
+    width: 330px;
+    margin: 20px;
+    opacity: 0.8;
+    transition: 0.5s ease;
+    cursor: pointer;
+    height: 220px;
+     
+}
+#images img:hover{
+    opacity: 1;
+}
+#images h5{
+    color: #fff;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 40%;
+    font-size: 25px;
+}
+ #images hr{
+    margin-left: 43.5%;
+ }
+ #call h6{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 80px;
+    margin-left: 41%;
+ }
+ #call p{
+    margin-left: 33%;
+    margin-top: 16px;
+
+ }
+ #call button{
+    margin-left: 45%;
+    width: 110px;
+    height: 35px;
+    color: #fff;
+    background-color: #f7444e;
+    border: none;
+    margin-top: 20px;
+    transition: 0.6s ease;
+    
+ }
+ #call button:hover{
+    background-color: #002c3e;
+ }
+ #call{
+     margin-bottom: -400px;
+ }
+ @media(max-width:1200px){
+  #about p{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10px;
+}  
+.carousel-indicators.custom-indicators{
+   margin-right: 219px;
+   margin-top: 10px;
+}
+#our-story p{
+    width: 70%;
+    margin-left: 15%;
+}
+   #choose-us .our-services{
+    margin-left: 60px;
+   }
+ #choose-us .fast-delivery , .free-shiping, .best-quality {
+     margin: 3px;
+ }
+  #images h5{
+    font-size: 30px;
+    margin-left: 38%;
+    }
+    #images img{
+        width: 290px;
+        height: 170px;
+        margin: 5px;
+    }
+    .image{
+        margin-left: 128px;
+    }
+    #images{
+        height: 90vh;
+    }
+    .imag-7{
+        margin-left: 150px !important;
+    }
+ 
+ }
+ @media (max-width:992px){
+  #about h1{
+    margin-left: 38%;
+  }
+   #choose-us h2{
+    margin-left: 30%;
+   }
+    #choose-us .our-services{
+    margin-left: 10px;
+   }
+      #images img{
+        width: 240px;
+        height: 170px;
+        margin: 5px;
+    }
+    .image{
+        margin-left: 128px;
+    }
+    #images{
+        height: 90vh;
+    }
+    .imag-7{
+        margin-left: 130px !important;
+    }
+}
+@media (max-width:768px){
+  .carousel-indicators.custom-indicators{
+   margin-right: 120px;
+   margin-top: 10px;
+}
+#choose-us h2{
+    font-size: 33px;
+    margin-left: 31%;
+     margin-top: 50px;
+   }
+    #choose-us .fast-delivery i, .free-shiping i, .best-quality i{
+    font-size: 40px;
+    margin-left: 100px;
+margin-top: 30px;
+  }
+  #choose-us .fast-delivery h3, .free-shiping h3, .best-quality h3{
+font-size: 15px;
+margin-left: 76px;
+   }
+    #choose-us  .fast-delivery p, .free-shiping p, .best-quality p{
+font-size: 13px;
+margin-left:48px ;
+opacity: 0.8;
+margin-top: -5px;
+    }
+        #images h5{
+        margin-left: 30%;
+    }
+    #images img{
+        width: 239px;
+        height: 150px;
+        margin: 5px;
+    }
+    .image{
+        margin-left: 1px;
+    }
+    #images{
+        height: 80vh;
+    }
+    .imag-7{
+        margin-left: 125px !important;
+    }
+       #call h6{
+        margin-left: 37%;
+     }
+      #call p{
+         margin-left: 30%;
+      }
+       #call span{
+        margin-left: 22%;
+       }
+         #call button{
+            margin-left: 44%;
+         }
+}
+ @media(max-width:600px){
+#about h1{
+    margin-left: 33%;
+}
+#about h2{
+    margin-left: 36%;
+    margin-top: 40px;
+}
+#about hr ,#our-story hr{
+    margin-left: 40%;
+}
+#about p{
+    width: 70%;
+    margin-left: 19%;
+    margin-top: 10px;
+}
+.carousel-indicators.custom-indicators{
+   margin-right: 90px;
+   margin-top: 10px;
+}
+#our-story h3{
+    margin-top: 40px;
+    margin-left: 36%;
+}
+#our-story p{
+    width: 70%;
+    margin-left: 19%;
+}
+#choose-us h2{
+    font-size: 27px;
+    margin-left: 26%;
+     margin-top: 50px;
+   }
+   #choose-us .our-services{
+    margin-left: 10px;
+   }
+ #choose-us .fast-delivery , .free-shiping, .best-quality {
+    width: 150px !important;
+    height: 150px;
+   margin: 3px;
+ }
+ #choose-us .fast-delivery i, .free-shiping i, .best-quality i{
+    font-size: 40px;
+    margin-left: 50px;
+margin-top: 30px;
+  }
+  #choose-us .fast-delivery h3, .free-shiping h3, .best-quality h3{
+font-size: 15px;
+margin-left: 32px;
+   }
+    #choose-us  .fast-delivery p, .free-shiping p, .best-quality p{
+font-size: 11px;
+margin-left:28px ;
+opacity: 0.8;
+margin-top: -5px;
+    }
+    #images h5{
+        margin-left: 26%;
+    }
+    #images img{
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+    }
+    .image{
+        margin-left: 1px;
+    }
+    #images{
+        height: 80vh;
+    }
+    .imag-7{
+        margin-left: 90px !important;
+    }
+     #call h6{
+        margin-left: 27%;
+     }
+      #call p{
+        margin-left: 17%;
+      }
+       #call span{
+        margin-left: 26%;
+       }
+         #call button{
+            margin-left: 39%;
+         }
+ }

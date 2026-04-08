@@ -1,0 +1,45 @@
+<section id="test">
+  <div class="test">
+    <h1>Testimonials</h1>
+  </div> 
+  <button
+class="back-to-top"
+[class.show]="backtotop"
+(click)="scrolltotop()"
+>
+ <i class="fa fa-arrow-up"></i>
+
+</button>
+  <h2>Customer`s Testimonial</h2> <hr>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="client.jpg" class="d-block w-100" alt="...">
+      <h3>Anna Trevor</h3>
+      <h4>Customer</h4>
+      <p>"The customer service was amazing and the delivery was super fast. I got my outfit the next day and it fits perfectly!"</p>
+    </div>
+    <div class="carousel-item">
+      <img src="pexels-glassesshop-gs-1317359316-27603695.jpg" class="d-block w-100" alt="...">
+       <h3>Kahled Ashour</h3>
+      <h4>Customer</h4>
+      <p>"I absolutely love the quality and style of the clothes I <span> bought here! Highly recommended."</span></p>
+    </div>
+    <div class="carousel-item">
+      <img src="pexels-leeloothefirst-4869697.jpg" class="d-block w-100" alt="...">
+       <h3>Emmy Trevor</h3>
+      <h4>Customer</h4>
+      <p>"I’m really impressed with the variety of styles and the attention to detail. Every piece feels premium and stylish."</p>
+    </div>
+  </div>
+ <div class="custom-carousel-buttons">
+  <button class="carousel-btn" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+  <button class="carousel-btn" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+</div>
+
+</div>
+</section>

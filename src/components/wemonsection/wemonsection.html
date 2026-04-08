@@ -1,0 +1,88 @@
+<section id="women">
+    <header>
+    <h1>Wemon Product</h1>
+</header>
+    <section  id="products">
+    <h5>Our <span>Product</span> </h5><hr>
+<div class="cards">
+    @for(product of productList ;track product.id){
+        
+       <div class="card" style="width: 21rem; ">
+      <a (click)="toggleLike(product)"
+>
+    <i
+      class="fa-heart"
+      [ngClass]="product.liked ? 'fa-solid liked' : 'fa-regular'">
+    </i>
+  </a>
+  <img src="{{product.img}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="info">
+       <h5 class="card-title">{{product.name}}</h5>
+    <h6>{{product.price |currency}}</h6>  
+    </div>
+    
+    <div class="text-overly">
+<div class="cart">
+      <button (click)="addProduct(product)">Add TO Cart</button>
+
+</div>
+<div class="detail">
+   <button (click)="showDetails(product)">Show Details</button>
+
+</div>
+    </div>
+     
+  </div>
+</div> 
+    }
+</div>
+<button
+class="back-to-top"
+[class.show]="backtotop"
+(click)="scrolltotop()"
+>
+ <i class="fa fa-arrow-up"></i>
+
+</button>
+<div class="cards">
+@if(Showmore){
+  @for(product of productList2 ;track product.id){
+       <div class="card" style="width: 21rem;">
+    <a (click)="toggleLike(product)"
+>
+    <i
+      class="fa-heart"
+      [ngClass]="product.liked ? 'fa-solid liked' : 'fa-regular'">
+    </i>
+  </a>
+  <img src="{{product.img}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="info">
+           <h5 class="card-title">{{product.name}}</h5>
+    <h6>{{product.price |currency}}</h6> 
+    </div>
+ 
+    <div class="text-overly">
+<div class="cart">
+      <button (click)="addProduct(product)">Add TO Cart</button>
+
+</div>
+<div class="detail">
+   <button (click)="showDetails(product)">Show Details</button>
+  
+</div>
+    </div>
+     
+  </div>
+</div> 
+    }
+}
+<button  class="show" (click)="Show()"> {{ Showmore ?'Show Less Product' : 'Show More Product'}}    </button>
+
+  
+</div>
+
+
+</section>
+</section>

@@ -1,0 +1,168 @@
+ footer{
+    background-color:  #002c3e;
+margin-top: 450px;
+padding: 1px;
+color: #fff;
+display: flex;
+ }
+ .left{
+    margin-top: 100px;
+    margin-left: 200px;
+ }
+ .right{
+    margin-left: 200px;
+    margin-top: 100px;
+ }
+ .right p{
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
+ .icons{
+    margin-bottom: 340px;
+ }
+ h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+ }
+ .location,.phone,.email{
+    margin-bottom: 10px;
+ }
+ .location span,.phone span,.email span{
+    margin-left: 5px;
+ }
+ h2{
+    margin-bottom: 20px;
+ }
+ .icons  i{
+background-color: #fff;
+color: #002c3e;
+border-radius: 20px;
+width: 30px;
+height: 30px;
+margin: 5px;
+padding-top: 8px;
+transition: 0.5s ease;
+ }
+ .icons i:hover{
+    color: #f7444e;
+ }
+ .foot{
+    display: flex;
+    margin-bottom: 100px;
+}
+.foot p{
+    color: #fff;
+     
+    margin-top: -1px;
+}
+.foot a{
+    color:#f7444e ;
+   margin-left: -290px;
+}
+hr{
+     margin-top: -260px;
+     margin-right: 300px;
+     margin-left: -160px;
+}
+@media(max-width:1200px){
+   .foot p{
+     
+     margin-left: -50px;
+     
+}
+.foot a{
+   
+   margin-left: -180px;
+}
+ .location,.phone,.email{
+    margin-bottom: 20px;
+    display: flex;
+ }
+ 
+ .location span,.phone span,.email span{
+    margin-left: 5px;
+    font-size: 14px;
+    margin-top: -5px;
+ }
+ .location i,.phone i,.email i{
+font-size: 13px;
+ }
+}
+@media (max-width:992px){
+ .foot p{
+     
+     margin-left: -150px;
+     
+}
+.foot a{
+   
+   margin-left: -77px;
+}
+}
+@media (max-width:768px){
+  .left{
+   margin-left: 70px;
+  }
+.foot p{
+      margin-left: -150px;
+     }
+.foot a{
+   margin-left: -35px;
+}
+}
+@media(max-width:600px){
+   
+ .left{
+    margin-top: 100px;
+    margin-left: 20px;
+ }
+ .left h1{
+   font-size: 25px;
+ }
+ .right{
+    margin-left: 100px;
+    margin-top: 100px;
+ }
+ .right p{
+    width: 44%;
+    
+ }
+ 
+ h1{
+    font-size: 35px;
+    margin-bottom: 40px;
+ }
+ .location,.phone,.email{
+    margin-bottom: 20px;
+    display: flex;
+ }
+ 
+ .location span,.phone span,.email span{
+    margin-left: 5px;
+    font-size: 14px;
+    margin-top: -5px;
+ }
+ .location i,.phone i,.email i{
+font-size: 13px;
+ }
+ h2{
+    margin-bottom: 20px;
+ }
+ 
+ .foot{
+     margin-bottom: 30px;
+}
+.foot p{
+      margin-left: -150px;
+     }
+.foot a{
+   margin-left: -77px;
+}
+hr{
+    margin-left:-220px ;
+     width: 400px;
+}
+
+
+}

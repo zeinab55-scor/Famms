@@ -1,0 +1,54 @@
+<section id="cart">
+      <header>
+    <h1>Cart</h1>
+</header>
+<div class="content" *ngIf="CartItems.length >0">
+
+
+<div class="left">
+ <div class="cart">
+    <nav>
+    <ul>
+        <li class="products" style="margin-left: 50px;">Product</li>
+        <li class="totals" style="margin-left: 340px;">Total</li>
+        <li class="quntity" style="margin-left: 100px;">Quantatiy</li>
+    </ul>
+ </nav>
+<div *ngFor="let item of CartItems">
+    
+ 
+<div class="product">
+    <div class="img">
+        <img src="{{item.img}}" alt="">
+    </div>
+    <div class="name">
+      <h2>  {{item.name}}</h2>
+      <p>{{item.price |currency}}</p>
+    </div>
+    <div class="price">
+        <h3>Total: {{ item.price * item.quntity |currency}}</h3>
+        <button class="minus" (click)="decrease(item)">-</button>
+    <input
+  type="text"
+  [value]="item.quntity"
+   
+/>
+    <button class="plus" (click)="increase(item)">+</button>
+    <a (click)="deletItem(item)"><i class="fa-solid fa-trash"></i></a>
+    </div>
+</div>
+</div>
+</div></div>
+<div class="right">
+<h3>Order summary</h3>
+<p>Total : <span>{{getTotal() |currency}}</span></p>
+<p>Shipping : <span>20 $</span></p>
+<h4>Grand total: <span style=" margin-left: 20px;">{{getTotal() + 20  |currency}}</span> </h4>
+<button (click)="pay()">Complete your purchase</button>
+</div>
+</div>
+<div class="empty" *ngIf="CartItems.length===0">
+<h2>Your Cart is Empty 🛒</h2>
+<p>Add some product to continue shopping</p>
+</div>
+</section>

@@ -1,0 +1,87 @@
+<section id="child">
+    <header>
+    <h1>Child Product</h1>
+</header>
+    <section  id="products">
+    <h5>Our <span>Product</span> </h5><hr>
+<div class="cards">
+    @for(products of productList ;track products.id){
+        
+       <div class="card" style="width: 21rem; ">
+      <a (click)="toggleLike(products)"
+>
+    <i
+      class="fa-heart"
+      [ngClass]="products.liked ? 'fa-solid liked' : 'fa-regular'">
+    </i>
+  </a>
+  <img src="{{products.img}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="info">
+       <h5 class="card-title">{{products.name}}</h5>
+    <h6>{{products.price |currency}}</h6>  
+    </div>
+    
+    <div class="text-overly">
+<div class="cart">
+       <button (click)="addProduct(products)">Add TO Cart</button>
+
+</div>
+<div class="detail">
+     <button (click)="showDetails(products)">Show Details</button>
+
+</div>
+    </div>
+     
+  </div>
+</div> 
+    }
+</div>
+<button
+class="back-to-top"
+[class.show]="backtotop"
+(click)="scrolltotop()"
+>
+ <i class="fa fa-arrow-up"></i>
+
+</button>
+<div class="cards">
+@if(Showmore){
+  @for(products of productList2 ;track products.id){
+       <div class="card" style="width: 21rem;">
+    <a (click)="toggleLike(products)"
+>
+    <i
+      class="fa-heart"
+      [ngClass]="products.liked ? 'fa-solid liked' : 'fa-regular'">
+    </i>
+  </a>
+  <img src="{{products.img}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="info">
+           <h5 class="card-title">{{products.name}}</h5>
+    <h6>{{products.price |currency}}</h6> 
+    </div>
+ 
+    <div class="text-overly">
+<div class="cart">
+        <button (click)="addProduct(products)">Add TO Cart</button>
+</div>
+<div class="detail">
+     <button (click)="showDetails(products)">Show Details</button>
+
+</div>
+    </div>
+     
+  </div>
+</div> 
+    }
+}
+<button  class="show" (click)="Show()"> {{ Showmore ?'Show Less Product' : 'Show More Product'}}    </button>
+
+  
+</div>
+
+
+</section>
+</section>

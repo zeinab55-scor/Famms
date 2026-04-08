@@ -1,0 +1,244 @@
+<section id="home">
+<h1>Sale 20 % off <span> On Everything</span></h1>
+<p>Discover the latest fashion trends for men, women, and kids.
+High-quality styles, modern designs, and unbeatable prices — all in one place.
+Shop now and enjoy exclusive discounts on everything you love.</p>
+<button (click)="ScrollToSection('products')">Shop Now</button>
+
+</section>
+<button class="back-to-top"
+[class.show]="backtotop"
+(click)="sceolltop()">
+ <i class="fa fa-arrow-up"></i>
+</button>
+
+<section id="service">
+<h2>Why Shop With Us</h2><hr>
+<div class="our-services">
+    <div class="fast-delivery">
+        <a><i class="fa-solid fa-truck"></i></a>
+        <h3>Fast Delivery</h3>
+        <p>We deliver your orders quickly and safely</p>
+    </div>
+    <div class="free-shiping">
+        <a><i class="fa-brands fa-free-code-camp"></i></a>
+        <h3>Free Shiping</h3>
+        <p>Enjoy free shipping on all orders with no hidden cost</p>
+    </div>
+    <div class="best-quality">
+        <a><i class="fa-solid fa-medal"></i></a>
+        <h3>Best Quality</h3>
+        <p>Our products are carefully selected to ensure the best quality,</p>
+    </div>
+</div>
+</section>
+<section id="new-arrivals">
+   
+ <h4>#New Arrivals</h4>
+    <p>Discover our latest arrivals, featuring fresh styles and modern designs.
+Carefully selected pieces to keep your wardrobe up to date with the newest trends.</p>
+<button (click)="ScrollToSection('products')">Shop Now</button>
+</section>
+<section  id="products">
+    <h5>Our <span>Product</span> </h5><hr>
+<div class="cards">
+    @for(product2 of productList ;track product2.id){
+        
+       <div class="card" style="width: 21rem; ">
+      <a (click)="toggleLike(product2)"
+>
+    <i
+      class="fa-heart"
+      [ngClass]="product2.liked ? 'fa-solid liked' : 'fa-regular'">
+    </i>
+  </a>
+  <img src="{{product2.img}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="info">
+       <h5 class="card-title">{{product2.name}}</h5>
+    <h6>{{product2.price |currency}}</h6>  
+    </div>
+    
+    <div class="text-overly">
+<div class="cart">
+  <button (click)="addProduct(product2)">Add TO Cart</button>
+</div>
+<div class="detail">
+   <button (click)="showdetails(product2)">Show Detalis</button>
+
+</div>
+    </div>
+     
+  </div>
+</div> 
+    }
+</div>
+<div class="cards">
+@if(Showmore){
+  @for(product2 of productList2 ;track product2.id){
+       <div class="card" style="width: 21rem;">
+    <a (click)="toggleLike(product2)"
+>
+    <i
+      class="fa-heart"
+      [ngClass]="product2.liked ? 'fa-solid liked' : 'fa-regular'">
+    </i>
+  </a>
+  <img src="{{product2.img}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="info">
+           <h5 class="card-title">{{product2.name}}</h5>
+    <h6>{{product2.price |currency}}</h6> 
+    </div>
+ 
+    <div class="text-overly">
+<div class="cart">
+   <button (click)="addProduct(product2)">Add TO Cart</button>
+
+</div>
+<div class="detail">
+  <button (click)="showdetails(product2)">Show Detalis</button>
+</div>
+    </div>
+     
+  </div>
+</div> 
+    }
+}
+<button  class="showw" (click)="Show()"> {{ Showmore ?'Show Less Product' : 'Show More Product'}}    </button>
+
+  
+</div>
+
+
+</section>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a  class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a   class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a  class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a   class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a   class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a   class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3" >
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 logo">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <img src="logo.png" alt="">
+          </h6>
+          <p>
+           Discover the latest fashion trends for men, women, and kids.
+High-quality styles, modern designs, and unbeatable prices — all in one place.
+Shop now and enjoy exclusive discounts on everything you love.
+          </p>
+        </div>
+        <!-- Grid column -->
+ 
+<!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a routerLink="/men" class="text-reset">Men`s Products</a>
+          </p>
+          <p>
+            <a routerLink="/wemon" class="text-reset">Wemon`s Products</a>
+          </p>
+          <p>
+            <a routerLink="/child" class="text-reset">Child`s Products</a>
+          </p>
+          
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a routerLink="/home" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a routerLink="/about" class="text-reset">About</a>
+          </p>
+          <p>
+            <a routerLink="/test" class="text-reset"> Testimonial</a>
+          </p>
+          <p>
+            <a routerLink="/blog" class="text-reset">Blog</a>
+          </p>
+          <p>
+            <a routerLink="/contact" class="text-reset">Contact</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+
+
+
+
+      
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+     </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 foot" style="background-color:  #222">
+     <p>© 2026 Copyright:</p>
+    <a class="  fw-bold" href="https://www.facebook.com/?ref=homescreenpwa">Zeinab Ebrahim</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
